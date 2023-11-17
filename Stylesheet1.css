@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+section {
+    margin: 2em;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.signup-link a {
+    color: #333;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.dashboard-section {
+    margin: 2em;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-details {
+    margin-top: 1em;
+}
+
+form select[name="gender"],
+form select[name="fitnessGoals"] {
+    width: 40%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+
+/* Add this to your existing Stylesheet1.css or create a new CSS file */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+
+.menu {
+    width: 10%; /* Adjust the width as needed */
+    height: calc(100% - 110px); /* Make the menu take the remaining height of the screen after the header */
+    background-color: #fff; /* Background color of the menu */
+    position: fixed; /* Fixed position to stay on the screen while scrolling */
+    left: 0; /* Position on the left side of the screen */
+    top: 111px; /* Align with the bottom of the header */
+    overflow-y: auto; /* Enable vertical scrolling if the content exceeds the height */
+}
+
+/* ... Your existing styles ... */
+
+.dashboard-section {
+    margin-left: 200px; /* Adjust margin to leave space for the menu */
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-details {
+    margin-top: 1em;
+}
+
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    display: block;
+    padding: 15px;
+    color: #555;
+    text-decoration: none;
+    border-bottom: 1px solid #555; /* Add a border between menu items */
+}
+
+.menu a:hover {
+    background-color: #fff; /* Change background color on hover */
+}
+
+.login-section {
+    margin: auto; /* Center the section */
+    max-width: 500px; /* Set maximum width */
+    padding: 2em; /* Add padding for a more comfortable look */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-section {
+    margin: auto; /* Center the section */
+    max-width: 400px; /* Set maximum width */
+    padding: 2em; /* Add padding for a more comfortable look */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+}
+
+.login-section form {
+    max-width: 100%; /* Make the form fill the width of the container */
+}
+
+.login-section label,
+.login-section input,
+.login-section button {
+    width: 100%; /* Make these elements fill the width of the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    font-size: 15px;
+}
+
+
+.signup-section {
+    margin: auto; /* Center the section */
+    max-width: 500px; /* Set maximum width */
+    padding: 2em; /* Add padding for a more comfortable look */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+}
+
+.signup-section form {
+    max-width: 100%; /* Make the form fill the width of the container */
+}
+
+.signup-section label,
+.signup-section input,
+.signup-section select,
+.signup-section button {
+    width: 100%; /* Make these elements fill the width of the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    font-size: 15px;
+
+}
+
+
