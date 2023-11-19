@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 17, 2023 at 10:17 PM
+-- Generation Time: Nov 19, 2023 at 08:44 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -384,7 +384,8 @@ INSERT INTO `users` (`UserID`, `Name`, `Age`, `Gender`, `ContactInformation`, `F
 (10048, 'Sophie Brown', 28, 'Female', 'sophie.brown@gmail.com', 'General Fitness', NULL, 'paintedsky123'),
 (10049, 'Owen Taylor', 16, 'Male', 'owen.taylor@gmail.com', 'Muscle Gain', NULL, 'treehugger1234'),
 (10050, 'Isabella Wilson', 19, 'Female', 'isabella.wilson@gmail.com', 'Weight Loss', NULL, 'calmsea789'),
-(10059, 'Garrett Hillyer', 20, 'Male', 'Ghillyer2@gmail.com', 'Weight loss', '', '$2y$10$Sc1G0WfJTItYKC2x7A49xupk/w0I6gM5gkd9ec8eZLSo9Xhla1EGC');
+(10059, 'Garrett Hillyer', 20, 'Male', 'Ghillyer2@gmail.com', 'Weight loss', '', '$2y$10$Sc1G0WfJTItYKC2x7A49xupk/w0I6gM5gkd9ec8eZLSo9Xhla1EGC'),
+(10060, 'Luke Gay', 20, 'Male', 'LukasG@gmail.com', 'Weight loss', '', '$2y$10$qE8xK1MnZgrEU7K52AMRWefqWNoUTnaggzUzYs2Lej8oqsxHqxwNy');
 
 --
 -- Indexes for dumped tables
@@ -441,7 +442,7 @@ ALTER TABLE `progress_tracker`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10060;
+  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10061;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
