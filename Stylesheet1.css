@@ -69,6 +69,8 @@ button:hover {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    float: right;
 }
 
 .user-details {
@@ -81,14 +83,7 @@ form select[name="fitnessGoals"] {
     padding: 8px;
     margin: 5px 0;
     box-sizing: border-box;
-    
 }
-
-
-
-
-
-/* Add this to your existing Stylesheet1.css or create a new CSS file */
 
 body {
     font-family: Arial, sans-serif;
@@ -105,31 +100,15 @@ header {
     padding: 1em;
 }
 
-
 .menu {
-    width: 10%; /* Adjust the width as needed */
-    height: calc(100% - 110px); /* Make the menu take the remaining height of the screen after the header */
-    background-color: #fff; /* Background color of the menu */
-    position: fixed; /* Fixed position to stay on the screen while scrolling */
-    left: 0; /* Position on the left side of the screen */
-    top: 111px; /* Align with the bottom of the header */
-    overflow-y: auto; /* Enable vertical scrolling if the content exceeds the height */
-}
-
-/* ... Your existing styles ... */
-
-.dashboard-section {
-    margin-left: 200px; /* Adjust margin to leave space for the menu */
-    padding: 1em;
+    width: 10%;
+    height: calc(100% - 110px);
     background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    top: 111px;
+    overflow-y: auto;
 }
-
-.user-details {
-    margin-top: 1em;
-}
-
 
 .menu ul {
     list-style-type: none;
@@ -142,26 +121,17 @@ header {
     padding: 15px;
     color: #555;
     text-decoration: none;
-    border-bottom: 1px solid #555; /* Add a border between menu items */
+    border-bottom: 1px solid #555;
 }
 
 .menu a:hover {
-    background-color: #fff; /* Change background color on hover */
-}
-
-.login-section {
-    margin: auto; /* Center the section */
-    max-width: 500px; /* Set maximum width */
-    padding: 2em; /* Add padding for a more comfortable look */
     background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .login-section {
-    margin: auto; /* Center the section */
-    max-width: 400px; /* Set maximum width */
-    padding: 2em; /* Add padding for a more comfortable look */
+    margin: auto;
+    max-width: 400px;
+    padding: 2em;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -169,22 +139,21 @@ header {
 }
 
 .login-section form {
-    max-width: 100%; /* Make the form fill the width of the container */
+    max-width: 100%;
 }
 
 .login-section label,
 .login-section input,
 .login-section button {
-    width: 100%; /* Make these elements fill the width of the container */
-    box-sizing: border-box; /* Include padding and border in the element's total width */
+    width: 100%;
+    box-sizing: border-box;
     font-size: 15px;
 }
 
-
 .signup-section {
-    margin: auto; /* Center the section */
-    max-width: 500px; /* Set maximum width */
-    padding: 2em; /* Add padding for a more comfortable look */
+    margin: auto;
+    max-width: 500px;
+    padding: 2em;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -192,17 +161,14 @@ header {
 }
 
 .signup-section form {
-    max-width: 100%; /* Make the form fill the width of the container */
+    max-width: 100%;
 }
 
 .signup-section label,
 .signup-section input,
 .signup-section select,
 .signup-section button {
-    width: 100%; /* Make these elements fill the width of the container */
-    box-sizing: border-box; /* Include padding and border in the element's total width */
+    width: 100%;
+    box-sizing: border-box;
     font-size: 15px;
-
 }
-
-

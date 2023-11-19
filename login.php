@@ -6,7 +6,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    // Use prepared statements to prevent SQL injection
     $sql = "SELECT * FROM users WHERE ContactInformation = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("s", $email);
@@ -15,13 +14,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows == 1) {
         $row = $result->fetch_assoc();
-        // Print out the row for debugging
-        var_dump($row);
 
-        // Ensure the column names match exactly with your database schema
         if (password_verify($password, $row['password'])) {
-            // Password is correct, proceed with login
-            // Set session variables and redirect to dashboard
             $_SESSION['user_id'] = $row['UserID'];
             header("Location: dashboard.php");
             exit;
@@ -29,7 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $error = "Invalid email or password";
         }
     } else {
-        // Email not found in the database, display an error
         $error = "Invalid email or password";
     }
 
@@ -43,7 +36,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Stylesheet1.css">
-
     <title>Login</title>
 </head>
 <body>
@@ -63,12 +55,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <button type="submit">Login</button>
         </form>
-        <!-- Your existing signup.php code -->
 
         <div class="signup-link">
             <p>Don't have an account? <a href="signup.php">Sign Up</a></p>
         </div>
     </section>
-
 </body>
 </html>

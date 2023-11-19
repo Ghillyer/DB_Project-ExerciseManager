@@ -1,13 +1,11 @@
 <?php
 session_start();
 
-// Check if the user is not logged in
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
     exit;
 }
 
-// Retrieve user information from the database based on $_SESSION['user_id']
 require_once('db.php');
 $userID = $_SESSION['user_id'];
 
@@ -29,7 +27,6 @@ $stmt->close();
     <link rel="stylesheet" href="Stylesheet1.css">
 
     <title>Exercise Management System - Dashboard</title>
-    <!-- Include additional styles if needed -->
 </head>
 
 <body>
@@ -38,12 +35,10 @@ $stmt->close();
         <h1>Exercise Management System</h1>
     </header>
 
-    <!-- Navigation -->
     <nav class="menu">
         <ul>
             <li><a href="dashboard.php">Dashboard</a></li>
             <li><a href="progresstracker.php">Progress Tracker</a></li>
-            <!-- Add more tabs as needed -->
         </ul>
     </nav>
 
@@ -52,7 +47,6 @@ $stmt->close();
         <div class="user-details">
             <p>User Contact Information: <?php echo $user['ContactInformation']; ?></p>
             <p>Name: <?php echo $user['Name']; ?></p>
-            <!-- Add more user details as needed -->
         </div>
 
         <a href="logout.php">Logout</a>
